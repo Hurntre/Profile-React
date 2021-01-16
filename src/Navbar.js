@@ -1,9 +1,11 @@
-const Navbar = () => {
+import Search from "./SearchBar"
+
+const Navbar = ({ changeTerm }) => {
     return ( 
         <nav className="navbar">
             <h1>Profiles.Org</h1>
             <div className="links">
-                <a href="/">Search</a>
+                <Search changeTerm={changeTerm} />
             </div>
         </nav>
      );
